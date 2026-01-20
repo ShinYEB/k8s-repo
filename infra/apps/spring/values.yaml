@@ -1,0 +1,15 @@
+image:
+  repository: my-spring-app
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+env:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://postgresql.infra.svc.cluster.local:5432/appdb"
+  SPRING_DATASOURCE_USERNAME: "postgres"
+  SPRING_DATASOURCE_PASSWORD: "password"
+  
+  SPRING_KAFKA_BOOTSTRAP_SERVERS: "my-cluster-kafka-bootstrap.infra.svc.cluster.local:9092"
