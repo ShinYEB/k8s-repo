@@ -1,3 +1,6 @@
+global:
+  imageRegistry: docker.io
+
 postgresql:
   architecture: standalone
   auth:
