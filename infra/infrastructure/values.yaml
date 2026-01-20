@@ -1,7 +1,6 @@
-global:
-  imageRegistry: docker.io
-
 postgresql:
+  image:
+    tag: "16" 
   architecture: standalone
   auth:
     postgresPassword: "password"
@@ -11,6 +10,8 @@ postgresql:
       enabled: false
 
 mongodb:
+  image:
+    tag: "7.0"
   architecture: standalone
   auth:
     rootPassword: "password"
@@ -18,6 +19,8 @@ mongodb:
     enabled: false
 
 redis:
+  image:
+    tag: "7.2"
   architecture: standalone
   auth:
     password: "password"
