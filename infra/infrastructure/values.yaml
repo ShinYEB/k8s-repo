@@ -23,3 +23,8 @@ redis:
       enabled: false
 
 strimzi-kafka-operator: {}
+
+ingress-nginx:
+  controller:
+    service:
+      type: LoadBalancer
