@@ -7,15 +7,15 @@ appVersion: "1.0.0"
 dependencies:
 
   - name: postgresql
-    version: 14.2.3
+    version: 15.5.2
     repository: https://charts.bitnami.com/bitnami
 
   - name: mongodb
-    version: 15.1.0
+    version: 15.6.3
     repository: https://charts.bitnami.com/bitnami
 
   - name: redis
-    version: 19.0.1
+    version: 19.3.2
     repository: https://charts.bitnami.com/bitnami
 
   - name: strimzi-kafka-operator
