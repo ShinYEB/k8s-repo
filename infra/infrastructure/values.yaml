@@ -1,0 +1,25 @@
+postgresql:
+  architecture: standalone
+  auth:
+    postgresPassword: "password"
+    database: "appdb"
+  primary:
+    persistence:
+      enabled: false
+
+mongodb:
+  architecture: standalone
+  auth:
+    rootPassword: "password"
+  persistence:
+    enabled: false
+
+redis:
+  architecture: standalone
+  auth:
+    password: "password"
+  master:
+    persistence:
+      enabled: false
+
+strimzi-kafka-operator: {}
